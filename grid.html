@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+        grid-gap:20px ;
+        grid-auto-rows: minmax(100px,auto);
+        grid-auto-columns: minmax(50px,auto);
+
+    }
+.items{
+    background-color: burlywood;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+#item2{
+    grid-row-start: 2;
+    grid-row-end:5 ;
+}
+#item1{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    text-align: center;
+    
+
+
+
+}
+#item4{
+   grid-row-start: 1;
+   grid-row-end: 4;
+
+}
+#item5{
+    grid-column-start: 4;
+    grid-column-end: 6;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-position: url(images);
+
+}
+
+#item6{
+
+grid-row-start:3 ;
+
+grid-row-start:4 ;
+grid-column-start: 3;
+grid-column-start: 4;
+
+
+
+
+
+}
+</style>
+<body>
+    <div class="container">
+        <div class="items" id="item1">dabba 1</div>
+        <div class="items" id="item2">dabba 2</div>
+        <div class="items">dabba 3</div>
+        <div class="items" id="item4">dabba 4</div>
+        <div class="items" id="item5">dabba 5</div>
+        <div class="items" id="item6">dabba 6</div>
+
+    </div>
+</body>
+</html>

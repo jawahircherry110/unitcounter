@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    background-color: chartreuse;
+    width: 30rem;
+    padding: 20px;
+}
+form{
+    border: 2px solid green;
+    width: 28rem;
+    margin-left: 45%;
+    
+    border-radius: 5px;
+}
+form input, button{
+    margin-left:35% ;
+    border-radius: 6px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
